@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saidas",
+  "info": {
+    "singularName": "saida",
+    "pluralName": "saidas",
+    "displayName": "Saida",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "observacao": {
+      "type": "string"
+    },
+    "fornecedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fornecedor.fornecedor"
+    },
+    "destino": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::destino.destino"
+    },
+    "maquina": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::maquina.maquina"
+    },
+    "produto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::produto.produto"
+    },
+    "quantidade_produto": {
+      "type": "integer"
+    },
+    "veiculo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::veiculo.veiculo"
+    },
+    "motorista": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::motorista.motorista"
+    },
+    "code": {
+      "type": "uid"
+    },
+    "material_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::material-item.material-item",
+      "mappedBy": "saida"
+    },
+    "tipo_saida": {
+      "type": "string"
+    }
+  }
+}

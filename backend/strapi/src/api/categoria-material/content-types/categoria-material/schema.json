@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_materiais",
+  "info": {
+    "singularName": "categoria-material",
+    "pluralName": "categoria-materiais",
+    "displayName": "Categoria Material",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "tipos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tipo-material.tipo-material",
+      "mappedBy": "categoria"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entradas",
+  "info": {
+    "singularName": "entrada",
+    "pluralName": "entradas",
+    "displayName": "Entrada",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fornecedor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fornecedor.fornecedor",
+      "inversedBy": "entradas"
+    },
+    "observacao": {
+      "type": "text"
+    },
+    "destino": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::destino.destino"
+    },
+    "arquivos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::arquivo.arquivo"
+    },
+    "material_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::material-item.material-item",
+      "mappedBy": "entrada"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "material_items",
+  "info": {
+    "singularName": "material-item",
+    "pluralName": "material-items",
+    "displayName": "Material Item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo_material": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-material.tipo-material"
+    },
+    "quantidade": {
+      "type": "float"
+    },
+    "isDisponivelEstoque": {
+      "type": "boolean"
+    },
+    "dataSaida": {
+      "type": "date"
+    },
+    "entrada": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::entrada.entrada",
+      "inversedBy": "material_items"
+    },
+    "saida": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::saida.saida",
+      "inversedBy": "material_items"
+    },
+    "categoria_material": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria-material.categoria-material"
+    }
+  }
+}

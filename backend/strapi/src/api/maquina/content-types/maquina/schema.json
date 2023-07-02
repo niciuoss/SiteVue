@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maquinas",
+  "info": {
+    "singularName": "maquina",
+    "pluralName": "maquinas",
+    "displayName": "Maquina"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

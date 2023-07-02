@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipos_materiais",
+  "info": {
+    "singularName": "tipo-material",
+    "pluralName": "tipos-materiais",
+    "displayName": "Tipo Material",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoria-material.categoria-material",
+      "inversedBy": "tipos"
+    }
+  }
+}

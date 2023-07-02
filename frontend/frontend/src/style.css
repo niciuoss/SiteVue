@@ -1,0 +1,22 @@
+.body {
+  background-color: #F1F1F1;
+  font-size: 16px;
+}
+
+.telite-bg-grey {
+  background-color: #F1F1F1;
+}
+
+.bg-fornecedor {
+  background-color: #FFFFFF;
+}
+.bg-fornecedor-pev {
+  background-color: #B8DEF9;
+}
+.bg-fornecedor-doacao {
+  background-color: #D3D3D3
+}
+
+.q-item.q-router-link--active, .q-item--active {
+  color: #06193d;
+}

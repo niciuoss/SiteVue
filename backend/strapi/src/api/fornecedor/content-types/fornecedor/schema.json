@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fornecedores",
+  "info": {
+    "singularName": "fornecedor",
+    "pluralName": "fornecedores",
+    "displayName": "Fornecedor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "isDestinatario": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "cnpjcpf": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "telefone": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "rua": {
+      "type": "string",
+      "required": true
+    },
+    "numero": {
+      "type": "string",
+      "required": true
+    },
+    "bairro": {
+      "type": "string",
+      "required": true
+    },
+    "cidade": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "string"
+    },
+    "horarioColeta": {
+      "type": "string"
+    },
+    "isAtivo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "motoristas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::motorista.motorista",
+      "mappedBy": "fornecedor"
+    },
+    "veiculos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::veiculo.veiculo",
+      "mappedBy": "fornecedor"
+    },
+    "entradas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::entrada.entrada",
+      "mappedBy": "fornecedor"
+    },
+    "arquivos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::arquivo.arquivo"
+    }
+  }
+}

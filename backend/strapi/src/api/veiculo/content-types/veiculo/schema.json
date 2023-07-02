@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "veiculos",
+  "info": {
+    "singularName": "veiculo",
+    "pluralName": "veiculos",
+    "displayName": "Veiculo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "placa": {
+      "type": "string",
+      "required": true
+    },
+    "fornecedor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::fornecedor.fornecedor",
+      "inversedBy": "veiculos"
+    },
+    "isExterno": {
+      "type": "boolean"
+    }
+  }
+}

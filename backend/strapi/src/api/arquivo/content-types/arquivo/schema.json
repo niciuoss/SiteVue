@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arquivos",
+  "info": {
+    "singularName": "arquivo",
+    "pluralName": "arquivos",
+    "displayName": "Arquivo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "extensao": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "tamanho": {
+      "type": "string"
+    },
+    "id_media": {
+      "type": "string"
+    }
+  }
+}
