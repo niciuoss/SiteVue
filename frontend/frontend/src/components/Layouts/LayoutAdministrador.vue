@@ -65,17 +65,20 @@ const authStore = useAuthStore();
 				</q-toolbar-title>
 				
 				<q-btn 
+					aria-label="Aumentar tamanho da fonte"
 					icon="o_text_increase"
 					@click="aumentarTamanho"
 				 >
 				</q-btn>
 				
 				<q-btn
+				aria-label="Normalizar tamanho da fonte"
 				icon="o_font_download"
 				@click="tamanhoNormal"
 				></q-btn>
 
 				<q-btn
+					aria-label="Diminuir tamanho da fonte"
 					icon="o_text_decrease"
 					@click="diminuirTamanho"
 				>
@@ -118,7 +121,7 @@ const authStore = useAuthStore();
 					</q-item-section>
 				</q-item>
 
-				<q-expansion-item expand-separator icon="o_add" label="Entradas">
+				<q-expansion-item expand-separator icon="o_add" label="Entradas" >
 					<q-item :to="{ name: 'Entrada.cadastro'}" :inset-level="1" clickable>
 						<q-item-section>Cadastrar Entrada</q-item-section>
 					</q-item>

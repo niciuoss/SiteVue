@@ -52,7 +52,7 @@ const columns = [
             </q-td>
 
             <q-td key="actions" :props="props">
-              <q-btn :to="{ name: 'Usuario.editar', params: {usuarioId: props.row.id} }" round flat icon="o_edit"></q-btn>
+              <q-btn aria-label="Editar" :to="{ name: 'Usuario.editar', params: {usuarioId: props.row.id} }" round flat icon="o_edit"></q-btn>
             </q-td>
           </q-tr>
         </template>

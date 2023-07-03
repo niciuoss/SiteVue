@@ -50,7 +50,6 @@ services:
       - ./backend/strapi/package-lock.json:/opt/package-lock.json       
       #- ./backend/strapi/yarn.lock:/opt/yarn.lock
       - ./backend/strapi/.env:/opt/app/.env
-      - ./backend/strapi/public/uploads:/opt/app/public/uploads
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     labels:

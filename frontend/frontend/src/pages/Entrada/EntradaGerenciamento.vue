@@ -357,7 +357,7 @@ function mtrPDF(index) {
                 <q-popup-proxy cover transition-show="scale" transition-hide="scale">
                   <q-date v-model="state.filterEntrada.dataInicial" mask="DD/MM/YYYY">
                     <div class="row items-center justify-end">
-                      <q-btn v-close-popup label="Close" color="primary" flat />
+                      <q-btn aria-label="Fechar" v-close-popup label="Close" color="primary" flat />
                     </div>
                   </q-date>
                 </q-popup-proxy>
@@ -373,7 +373,7 @@ function mtrPDF(index) {
                 <q-popup-proxy cover transition-show="scale" transition-hide="scale">
                   <q-date v-model="state.filterEntrada.dataFinal" mask="DD/MM/YYYY">
                     <div class="row items-center justify-end">
-                      <q-btn v-close-popup label="Close" color="primary" flat />
+                      <q-btn aria-label="Fechar" v-close-popup label="Close" color="primary" flat />
                     </div>
                   </q-date>
                 </q-popup-proxy>
@@ -399,7 +399,7 @@ function mtrPDF(index) {
         </div>
 
         <div class="col-shrink">
-          <q-btn @click="searchEntradas()" class="q-mt-auto bg-primary text-white vertical-middle	" round flat icon="o_search"></q-btn>
+          <q-btn aria-label="Pesquisa Entradas" @click="searchEntradas()" class="q-mt-auto bg-primary text-white vertical-middle	" round flat icon="o_search"></q-btn>
         </div>
 
       </div>
@@ -435,9 +435,10 @@ function mtrPDF(index) {
 
           <q-card>
             <q-card-section>
-              <q-table dense flat :rows="entrada.material_items" :columns="columns" hide-pagination
+              <q-table dense flat summary="Tabela que lista entradas" :rows="entrada.material_items" :columns="columns" hide-pagination
               table-header-class="telite-bg-grey text-primary text-bold">
                 <template v-slot:header="props">
+                  
                   <q-tr :props="props" class="telite-bg-grey">
                     <q-th
                       class="text-primary"
@@ -448,6 +449,7 @@ function mtrPDF(index) {
                       {{ col.label }}
                     </q-th>
                   </q-tr>
+                
                 </template>
 
                 <template v-slot:body="props">
