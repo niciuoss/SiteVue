@@ -10,7 +10,7 @@ const texto = ref('Informações sobre o site')
 </script>
 
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section>
 			<div class="text-weight-medium">Visão Geral</div>
 		</q-card-section>
@@ -33,7 +33,7 @@ const texto = ref('Informações sobre o site')
       <q-separator inset />
 
       <q-card-section>
-        Acesse as principais funcionalidades no menu lateral
+          Acesse as principais funcionalidades no menu lateral
       </q-card-section>
     </q-card>
 		</div>

@@ -202,7 +202,7 @@ function limparTipoForm () {
 </script>
 
 <template>
-  <q-card flat class="telite-bg-grey">
+  <q-card flat class="quixada-bg-grey">
     <q-card-section>
 			<div class="text-h5 text-weight-medium">Cadastrar Nova Saída</div>
 		</q-card-section>
@@ -425,9 +425,9 @@ function limparTipoForm () {
                         <div style="display: flex; margin: auto ;">
 
                         <q-table style="flex: 6;" dense flat :rows="checkMaterialItems" :columns="columnsSaidaTransformacao" hide-pagination
-                        table-header-class="telite-bg-grey text-primary text-bold">
+                        table-header-class="quixada-bg-grey text-primary text-bold">
                           <template v-slot:header="props">
-                            <q-tr :props="props" class="telite-bg-grey">
+                            <q-tr :props="props" class="quixada-bg-grey">
                               <q-th
                                 class="text-primary"
                                 style="font-weight: bold;"

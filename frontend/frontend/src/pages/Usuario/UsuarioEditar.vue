@@ -30,7 +30,7 @@ const value = ref('aaa')
 </script>
 
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section>
 			<div class="text-h5 text-weight-medium">Editar Usuário</div>
 		</q-card-section>

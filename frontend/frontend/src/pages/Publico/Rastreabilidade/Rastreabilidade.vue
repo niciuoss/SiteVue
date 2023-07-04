@@ -24,7 +24,7 @@ onMounted(async () => {
       	<q-toolbar>
         	<q-toolbar-title class="q-pt-md">
 				<q-toolbar-title class="text-center">
-					<a href="https://www.telite.com.br" target="_blank"><q-img src="../../../assets/logo.png" style="max-width: 50px"/></a>
+					<a href="https://www.quixada.com.br" target="_blank"><q-img src="../../../assets/logo.png" style="max-width: 50px"/></a>
 				</q-toolbar-title>
         	</q-toolbar-title>
       	</q-toolbar>
@@ -58,9 +58,9 @@ onMounted(async () => {
 		
     </q-page-container>
     <q-footer style="background: #f1f1f1" class="text-primary text-center">
-	  <a href="https://blog.telite.com.br" target="_blank"><q-icon class="q-mx-xs q-my-md" :name="fabBlogger" color="primary" size="32px" /></a>
-	  <a href="https://www.facebook.com/telhastelite/" target="_blank"><q-icon class="q-mx-xs q-my-md" :name="fabFacebookSquare" color="primary" size="32px" /></a>
-	  <a href="https://www.instagram.com/telhastelite" target="_blank"><q-icon class="q-mx-xs q-my-md" :name="fabInstagramSquare" color="primary" size="32px" /></a>
+	  <a href="https://blog.quixada.com.br" target="_blank"><q-icon class="q-mx-xs q-my-md" :name="fabBlogger" color="primary" size="32px" /></a>
+	  <a href="https://www.facebook.com/telhasquixada/" target="_blank"><q-icon class="q-mx-xs q-my-md" :name="fabFacebookSquare" color="primary" size="32px" /></a>
+	  <a href="https://www.instagram.com/telhasquixada" target="_blank"><q-icon class="q-mx-xs q-my-md" :name="fabInstagramSquare" color="primary" size="32px" /></a>
 	  <div class="bg-primary text-white text-weight-light q-py-lg text-center">*Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s*</div>
     </q-footer>
 

@@ -21,7 +21,7 @@ onMounted(async () => {
 </script>
 
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section class="q-pb-md">
 			<div class="text-h5 text-weight-medium">Parametrização</div>
 		</q-card-section>
@@ -41,7 +41,7 @@ onMounted(async () => {
 
       <q-separator />
 
-      <q-tab-panels v-model="tab" animated class="telite-bg-grey">
+      <q-tab-panels v-model="tab" animated class="quixada-bg-grey">
         <q-tab-panel name="material">
           <Material></Material>
         </q-tab-panel>

@@ -83,6 +83,7 @@ export default class MaterialService {
 			return data;
 		}).catch(() => { this.notificacao.add('Erro ao cadastrar') });
     const tipoMaterial = Object.assign(new TipoMaterial(tipoMaterialData.id), tipoMaterialData);
+		console.log(tipoMaterial.id);
 		return tipoMaterial
 	}
 

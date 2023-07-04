@@ -73,7 +73,7 @@ async function uploadFile(){
 
 </script>
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section>
 			<div class="text-h5 text-weight-medium">Gerenciar Anexos</div>
 		</q-card-section>

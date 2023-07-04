@@ -108,7 +108,7 @@ function clearFilters() {
 </script>
 
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section>
 			<div class="text-h5 text-weight-medium">Saidas</div>
       <div class="q-mt-xs q-gutter-sm">
@@ -234,9 +234,9 @@ function clearFilters() {
               <div style="display: flex; margin: auto ;">
 
               <q-table v-if="saida.tipo_saida === 'SAIDA_PADRAO'" style="flex: 1;" flat :rows="saida.material_items" :columns="columnsSaidaPadrao" hide-pagination
-              table-header-class="telite-bg-grey text-primary text-bold">
+              table-header-class="quixada-bg-grey text-primary text-bold">
                 <template v-slot:header="props">
-                  <q-tr :props="props" class="telite-bg-grey">
+                  <q-tr :props="props" class="quixada-bg-grey">
                     <q-th
                       class="text-primary"
                       style="font-weight: bold;"
@@ -264,9 +264,9 @@ function clearFilters() {
               </q-table>
 
               <q-table style="flex: 6;" v-if="saida.tipo_saida === 'SAIDA_TRANSFORMACAO'" dense flat :rows="saida.material_items" :columns="columnsSaidaTransformacao" hide-pagination
-              table-header-class="telite-bg-grey text-primary text-bold">
+              table-header-class="quixada-bg-grey text-primary text-bold">
                 <template v-slot:header="props">
-                  <q-tr :props="props" class="telite-bg-grey">
+                  <q-tr :props="props" class="quixada-bg-grey">
                     <q-th
                       class="text-primary"
                       style="font-weight: bold;"

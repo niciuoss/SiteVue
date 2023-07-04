@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import VueAnnouncer from '@vue-a11y/announcer';
-import NotifyTelite from './components/Layouts/Notify.vue';
+import Notify from './components/Layouts/Notify.vue';
 </script>
 
 <template>
-  <NotifyTelite></NotifyTelite>
+  <Notify></Notify>
   <router-view/>
   <VueAnnouncer></VueAnnouncer>
 </template>

@@ -9,7 +9,7 @@ const tab = ref('motorista')
 </script>
 
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section class="q-pb-md">
 			<div class="text-h5 text-weight-medium">Transporte</div>
 		</q-card-section>
@@ -28,7 +28,7 @@ const tab = ref('motorista')
 
       <q-separator />
 
-      <q-tab-panels v-model="tab" animated class="telite-bg-grey">
+      <q-tab-panels v-model="tab" animated class="quixada-bg-grey">
         <q-tab-panel name="motorista">
           <Motorista></Motorista>
         </q-tab-panel>

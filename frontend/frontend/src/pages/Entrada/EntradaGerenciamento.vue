@@ -86,7 +86,7 @@ const texto = ref([
 ])
 
 const destinatario = ref([
-  "DONATÁRIO: Telite, sediada no endereço Rua Orlando Mariosa, 87, Reta. CEP:25870000, Comendador Levy Gasparian, RIo de Janeiro. Identificada com CNPJ 25325000000192"
+  "DONATÁRIO: Prefeitura, sediada no endereço Rua Orlando Mariosa, 87, Reta. CEP:63870000, Comendador Levy Gasparian, Quixadá. Identificada com CNPJ 25325000000192"
 ])
 
 const acordo = ref([
@@ -158,8 +158,8 @@ function termoDescartePDF(index) {
     .setFont("times")
     .setFontSize(11)
     .setTextColor(50, 50, 50)
-    .text("Consultar autenticidade via: sistema.telite.com.br"
-    + " - Relatório gerado pelo sistema Telite ®"
+    .text("Consultar autenticidade via: sistema.quixada.com.br"
+    + " - Relatório gerado pelo sistema Quixadá ®"
     , 105, doc.internal.pageSize.height - 6, { align: "center", maxWidth: 210 })
 
   doc.output("dataurlnewwindow");
@@ -269,7 +269,7 @@ function mtrPDF(index) {
   doc.setFillColor(131, 217, 218).rect(10, finalY + 115, 190, 8, 'F'); // caixa
   doc.setFontSize(12).setFont("helvetica", "normal", 700).text("Destino Final: ", 15, finalY + 120, { align: "left", maxWidth: 190});
 
-  doc.setFontSize(10).setFont("helvetica", "normal", 400).text("Razão Social: " + "Telite - 25325000000192", 10, finalY + 130, { align: "left", maxWidth: 90 });
+  doc.setFontSize(10).setFont("helvetica", "normal", 400).text("Razão Social: " + "Quixadá - 25325000000192", 10, finalY + 130, { align: "left", maxWidth: 90 });
   doc.text("Endereço: " + "Orlando Mariosa - 87 - Reta", 10, finalY + 136, { align: "left", maxWidth: 90 });
   doc.text("Município: " + "", 10, finalY + 142, { align: "left", maxWidth: 90 });
   doc.text("Responsável: " + "Comendador Levy Gasparian", 10, finalY + 148, { align: "left", maxWidth: 90 });
@@ -295,7 +295,7 @@ function mtrPDF(index) {
     .setFontSize(11)
     .text("Emitido em: "
     + entrada.criadoEm()
-    + " - MTR Gerado pelo sistema Telite ®"
+    + " - MTR Gerado pelo sistema Quixadá ®"
     , 105, doc.internal.pageSize.height - 6, { align: "center", maxWidth: 210 })
 
   doc.output("dataurlnewwindow");
@@ -306,7 +306,7 @@ function mtrPDF(index) {
 </script>
 
 <template>
-  <q-card flat class="telite-bg-grey">
+  <q-card flat class="quixada-bg-grey">
     <q-card-section>
       <q-dialog
         v-model="carousel"
@@ -436,10 +436,10 @@ function mtrPDF(index) {
           <q-card>
             <q-card-section>
               <q-table dense flat summary="Tabela que lista entradas" :rows="entrada.material_items" :columns="columns" hide-pagination
-              table-header-class="telite-bg-grey text-primary text-bold">
+              table-header-class="quixada-bg-grey text-primary text-bold">
                 <template v-slot:header="props">
                   
-                  <q-tr :props="props" class="telite-bg-grey">
+                  <q-tr :props="props" class="quixada-bg-grey">
                     <q-th
                       class="text-primary"
                       style="font-weight: bold;"

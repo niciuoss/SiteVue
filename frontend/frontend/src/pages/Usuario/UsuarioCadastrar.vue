@@ -22,7 +22,7 @@ onMounted(async () => {
 </script>
 
 <template>
-	<q-card flat class="telite-bg-grey">
+	<q-card flat class="quixada-bg-grey">
 		<q-card-section>
 			<div class="text-h5 text-weight-medium">Cadastrar Usuário</div>
 		</q-card-section>
